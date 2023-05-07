@@ -15,6 +15,10 @@ function MovieList(props) {
                             <div className="card-body">
                                 <h2 className="card-title">{movie.show.name}</h2>
                                 <h3 className="card-title">{movie.show.language}</h3>
+
+                                <h3 className="card-title">{movie.show.premiered}</h3>
+                                <h3 className="card-title">{movie.show.schedule.time}</h3>
+
                                 <Link to={`/movie/${movie.show.id}`}>
                                     <button className="btn btn-sm btn-primary">View Summary</button>
                                 </Link>
